@@ -6,10 +6,11 @@ import BelowTheFold from "../components/BelowTheFold";
 import Footer from "../components/Footer";
 
 function LayoutOne(props) {
-  const [tableData, setTableData] = useState(0);
   const [rowData, setRowData] = useState([]);
   const [download, setDownload] = useState(0);
   const [rank, setRank] = useState(null);
+  const [rankName, setRankName] = useState("");
+  const [rawResult, setRawResult] = useState([]);
 
   const getData = () => {
     fetch(process.env.REACT_APP_SPREADSHEET_URL, {
@@ -31,7 +32,7 @@ function LayoutOne(props) {
           result = result.replace(".setResponse(", "");
           result = result.replace(result.slice(-2), "");
           result = JSON.parse(result);
-          setTableData(result);
+          setRawResult(result.table.rows);
           let threshold = result.table.rows;
           threshold = getThresholdValue(threshold);
           threshold = sortPercentileValue(threshold, true);
@@ -51,10 +52,17 @@ function LayoutOne(props) {
       <AboveTheFold
         setDownload={setDownload}
         setRank={setRank}
+        setRankName={setRankName}
+        rawResult={rawResult}
         download={download}
         rowData={rowData}
       />
-      <BelowTheFold rank={rank} />
+      <BelowTheFold
+        rank={rank}
+        rawResult={rawResult}
+        threshold={rowData}
+        rankName={rankName}
+      />
       <Footer />
     </div>
   );

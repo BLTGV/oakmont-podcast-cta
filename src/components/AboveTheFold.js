@@ -10,6 +10,11 @@ function AboveTheFold(props) {
       if (props.download >= props.rowData[i]) {
         locRank = i + 1;
         props.setRank(locRank);
+        for (let j = 0; j < props.rawResult.length; j++) {
+          if (props.rowData[i] === props.rawResult[j].c[0].v) {
+            props.setRankName(props.rawResult[j].c[4].v);
+          }
+        }
         break;
       } else props.setRank(locRank);
     }
