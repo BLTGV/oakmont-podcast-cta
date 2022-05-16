@@ -46,11 +46,8 @@ function BelowTheFold(props) {
       ) : (
         <div className="flex flex-col md:flex-row m-auto px-2 py-0 md:px-40 w-11/12 md:w-8/12 my-10 md:my-0">
           <div className="flex flex-col my-auto w-full">
-            <span className="text-lg md:text-xl text-center text-shark">
+            <span className="text-lg md:text-xl text-center text-shark font-semibold">
               {rankStatus}
-            </span>
-            <span className="text-4xl md:text-5xl mt-10 font-bold text-center text-shark">
-              {rankType}
             </span>
             <div className="w-full bg-shark mt-14 rounded-xl">
               <figure className="relative w-full md:h-full">
@@ -65,7 +62,7 @@ function BelowTheFold(props) {
                   </div>
                 </figcaption>
               </figure>
-              <div className="p-10 text-concrete text-sm">
+              <div className="p-10 text-concrete-700 text-sm">
                 {rankDescription}
               </div>
             </div>
