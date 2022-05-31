@@ -21,7 +21,12 @@ function AboveTheFold(props) {
   };
 
   return (
-    <div className="flex flex-col bg-shark min-h-screen">
+    <div
+      className="flex flex-col min-h-screen bg-shark bg-cover bg-center"
+      style={{
+        backgroundImage: `linear-gradient(rgba(51,55,56, 0.9), rgba(51,55,56, 0.9)), url("/bg_header.jpg")`,
+      }}
+    >
       <Header />
       <div className="flex flex-col md:flex-row my-auto">
         <div className="w-full md:w-1/2 px-10 my-auto">
@@ -29,7 +34,7 @@ function AboveTheFold(props) {
             <h1 className="text-concrete text-6xl font-bold mt-10 md:mt-0">
               How popular is your podcast?
             </h1>
-            <p className="text-concrete-900 mt-10 text-lg font-light">
+            <p className="text-concrete-500 mt-10 text-lg font-light">
               Beginner? Intermediate? Advanced? Awesome?
             </p>
             <div className="w-fit mt-10 border-l-2 pl-5 text-sm md:text-md">

@@ -3,7 +3,7 @@ import React from "react";
 function Header(props) {
   return (
     <div
-      className="flex flex-row px-5 py-5 md:px-20 md:py-10 font-extralight text-concrete-900"
+      className="flex flex-row px-5 py-5 md:px-20 md:py-10 font-extralight text-concrete-500"
       id="header"
     >
       <a href="/" className="w-2/12 md:w-1/12">
