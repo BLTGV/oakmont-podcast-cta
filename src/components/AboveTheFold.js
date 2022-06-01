@@ -63,7 +63,7 @@ function AboveTheFold(props) {
           <div className="m-auto p-0 w-full">
             <div className="flex flex-col bg-shark-400 rounded-xl py-10 px-10 mt-10">
               <p className="text-concrete-900 text-center mb-5">
-                Please enter downloads for month
+                Please enter your downloads in the first 30 days
               </p>
               <input
                 type="number"
