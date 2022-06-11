@@ -67,7 +67,7 @@ function BelowTheFold(props) {
               </div>
             </div>
             {rankDownloadDescription !== "" ? (
-              <div className="flex flex-col md:flex-row bg-white mt-10 px-2 md:px-10 py-10 border-l-4 border-red-500">
+              <div className="flex flex-col xl:flex-row bg-white mt-10 px-0 xl:px-10 py-10 border-l-4 border-red-500">
                 <div
                   className={`flex flex-col my-auto ${
                     props.rank !== null && props.rank !== 1 ? null : "mx-auto"
@@ -81,10 +81,10 @@ function BelowTheFold(props) {
                   </span>
                 </div>
                 {props.rank !== null && props.rank !== 1 ? (
-                  <div className="m-auto mt-5 md:mt-0">
+                  <div className="mx-auto mt-10 xl:my-auto">
                     <a
                       href={downloadLink}
-                      className="py-2 px-7 bg-shark text-concrete font-light text-sm rounded-md mx-auto w-full md:w-100"
+                      className="py-2 px-7 bg-shark text-concrete font-light text-sm rounded-md mx-auto w-full xl:w-100"
                     >
                       Download
                     </a>

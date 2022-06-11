@@ -55,17 +55,52 @@ function Footer(props) {
         </div>
       </div>
       <div className="w-full border-t border-concrete">
-        <p className="text-concrete-900 text-center py-5 md:p-10 text-sm">
-          Oakmont Podcast CTA &mdash; Copyright &copy; 2022{" "}
-          <a
-            href="https://bltgv.com"
-            target="_blank"
-            rel="noreferrer"
-            className="text-yellow-500"
-          >
-            BLT
-          </a>
-        </p>
+        <div className="flex flex-row py-5 md:p-10">
+          <div className="flex flex-row mx-auto">
+            <p className="text-concrete-900 text-sm">
+              © 2022 The Oakmont Group LLC - Created with ♥️ by &nbsp;
+            </p>
+            <a
+              href="https://bltgv.com"
+              target="_blank"
+              rel="noreferrer"
+              className="my-auto"
+            >
+              <svg
+                className="w-10 fill-yellow-500"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 44.1 15.8"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <g id="Front">
+                    <g id="Layer_23_copy">
+                      <polygon
+                        class="st0"
+                        points="44.1,0 26.8,0 26.8,3.2 32.6,3.2 32.6,15.8 38.2,15.8 38.2,3.2 44.1,3.2 			"
+                      />
+                      <polygon
+                        class="st0"
+                        points="32,12.7 23.4,12.7 23.4,0 17.8,0 17.8,15.8 32,15.8 			"
+                      />
+                      <path
+                        class="st0"
+                        d="M17.2,10.9c0-1.6-0.9-3-2.2-3.8c0.6-0.7,1-1.6,0.9-2.5C16,2.1,13.4,0,10.1,0H0v15.8h11.5
+				C14.7,15.7,17.2,13.6,17.2,10.9z M9.2,6H5.1V3.2h4.2c1.1,0,1.9,0.6,1.9,1.4C11.1,5.5,10.2,6.2,9.2,6L9.2,6z M5.1,9.2H10
+				c1.1-0.1,2.1,0.6,2.2,1.7c0,0,0,0,0,0c-0.1,1.1-1.1,1.9-2.2,1.7c0,0,0,0,0,0H5.1V9.2z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

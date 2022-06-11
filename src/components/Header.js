@@ -6,12 +6,15 @@ function Header(props) {
       className="flex flex-row px-5 py-5 md:px-20 md:py-10 font-extralight text-concrete-500"
       id="header"
     >
-      <a href="/" className="w-2/12 md:w-1/12">
+      <a
+        href="https://www.theoakmontgroupllc.com/"
+        className="w-2/12 md:w-1/12"
+      >
         <img src="/oakmont-logo.png" className="w-full" alt="Oakmont logo" />
       </a>
       <span className="grow">&nbsp;</span>
       <a
-        href="https://theoakmontgroupllc.com"
+        href="https://www.theoakmontgroupllc.com/"
         target="_blank"
         rel="noreferrer"
         className="flex flex-row hover:underline text-sm my-auto"
