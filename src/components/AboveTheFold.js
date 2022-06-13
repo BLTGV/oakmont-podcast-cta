@@ -58,36 +58,42 @@ function AboveTheFold(props) {
         </div>
         <div className="w-full sm:w-8/12 xl:w-1/2 p-10 sm:p-20 xl:p-36 m-auto">
           <div className="m-auto p-0 w-full">
-            <div className="flex flex-col bg-shark-400 rounded-xl py-10 px-10 xl:mt-10">
+            <div className="flex flex-col bg-shark-500/[.6] rounded-xl py-10 px-10 xl:mt-10">
               <p className="text-concrete-900 text-center mb-5">
                 Please enter your downloads in the first 30 days
               </p>
-              <input
-                type="number"
-                className="bg-shark-400 rounded-md mr-4 grow h-10 w-full p-7 border-2 border-concrete text-concrete"
-                onChange={(e) => {
-                  props.setDownload(e.target.value);
-                  props.setRank(null);
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") {
+              <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2">
+                <input
+                  className="bg-shark-500/[.0] rounded-md text-center focus:outline-none grow h-12 w-full lg:w-1/2 border border-concrete-500 text-concrete-500 mx-auto my-auto"
+                  onChange={(e) => {
+                    props.setDownload(e.target.value);
+                    props.setRank(null);
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      checkRankHandler();
+                    }
+                  }}
+                  onKeyPress={(event) => {
+                    if (!/[0-9]/.test(event.key)) {
+                      event.preventDefault();
+                    }
+                  }}
+                ></input>
+                <Link
+                  className="py-4 px-9 mx-auto w-full lg:w-1/2 bg-concrete-500 text-shark-500 font-light text-sm rounded-md cursor-pointer my-auto"
+                  onClick={(e) => {
                     checkRankHandler();
-                  }
-                }}
-              ></input>
-              <Link
-                className="py-4 px-9 w-full mx-auto bg-concrete text-black font-light text-sm rounded-md mt-3 cursor-pointer"
-                onClick={(e) => {
-                  checkRankHandler();
-                }}
-                activeClass="active"
-                to="resultPage"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <p className="text-center">Compare</p>
-              </Link>
+                  }}
+                  activeClass="active"
+                  to="resultPage"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <p className="text-center">Compare</p>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
