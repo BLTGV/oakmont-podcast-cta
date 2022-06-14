@@ -29,36 +29,39 @@ function AboveTheFold(props) {
     >
       <Header />
       <div className="flex flex-col xl:flex-row my-auto">
-        <div className="w-full md:w-11/12 xl:w-1/2 px-10 md:px-36 my-auto mx-auto">
-          <h1 className="text-concrete text-6xl font-bold mt-10 md:mt-0 sm:text-center xl:text-left">
-            How popular is your podcast?
-          </h1>
-          <p className="text-concrete-500 mt-10 text-lg font-light sm:text-center xl:text-left">
-            Beginner? Intermediate? Advanced? Awesome?
-          </p>
-          <div className="w-fit mt-10 border-l-2 pl-5 text-sm md:text-md mx-auto">
-            <span className="text-concrete">
-              This is an estimate based on data provided by Libsyn:
-            </span>
-            <ul className="text-concrete list-disc list-inside">
-              <li>
-                <strong>Beginner:</strong> from 0 to 50% of podcasts
-              </li>
-              <li>
-                <strong>Intermediate:</strong> more popular than 50% of podcasts
-              </li>
-              <li>
-                <strong>Advanced:</strong> more popular than 80% of podcasts
-              </li>
-              <li>
-                <strong>Awesome:</strong> more popular than 95% of podcasts
-              </li>
-            </ul>
+        <div className="flex flex-row-reverse w-full md:w-11/12 xl:w-1/2 px-10 xl:px-0 my-auto mx-auto xl:mx-0">
+          <div className="lg:w-3/4 mx-auto xl:mx-0">
+            <h1 className="text-concrete text-6xl font-bold mt-10 md:mt-0 sm:text-center xl:text-left">
+              How popular is your podcast?
+            </h1>
+            <p className="text-concrete-500 mt-10 text-lg font-light sm:text-center xl:text-left">
+              Beginner? Intermediate? Advanced? Awesome?
+            </p>
+            <div className="w-fit mt-10 border-l-2 pl-5 text-sm md:text-md mx-auto xl:ml-0">
+              <span className="text-concrete">
+                This is an estimate based on data provided by Libsyn:
+              </span>
+              <ul className="text-concrete list-disc list-inside">
+                <li>
+                  <strong>Beginner:</strong> from 0 to 50% of podcasts
+                </li>
+                <li>
+                  <strong>Intermediate:</strong> more popular than 50% of
+                  podcasts
+                </li>
+                <li>
+                  <strong>Advanced:</strong> more popular than 80% of podcasts
+                </li>
+                <li>
+                  <strong>Awesome:</strong> more popular than 95% of podcasts
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="w-full sm:w-8/12 xl:w-1/2 p-10 sm:p-20 xl:p-36 m-auto">
           <div className="m-auto p-0 w-full">
-            <div className="flex flex-col bg-black/[.5] rounded-xl py-10 px-10 lg:w-3/4 mx-auto">
+            <div className="flex flex-col bg-black/[.5] rounded-xl py-10 px-10 lg:w-3/4 mx-auto xl:ml-0">
               <p className="text-concrete-900 text-center mb-5">
                 Please enter your downloads in the first 30 days
               </p>
