@@ -58,11 +58,11 @@ function AboveTheFold(props) {
         </div>
         <div className="w-full sm:w-8/12 xl:w-1/2 p-10 sm:p-20 xl:p-36 m-auto">
           <div className="m-auto p-0 w-full">
-            <div className="flex flex-col bg-shark-500/[.6] rounded-xl py-10 px-10 xl:mt-10">
+            <div className="flex flex-col bg-black/[.5] rounded-xl py-10 px-10 lg:w-3/4 mx-auto">
               <p className="text-concrete-900 text-center mb-5">
                 Please enter your downloads in the first 30 days
               </p>
-              <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-2">
+              <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-5 mt-6">
                 <input
                   className="bg-shark-500/[.0] rounded-md text-center focus:outline-none grow h-12 w-full lg:w-1/2 border border-concrete-500 text-concrete-500 mx-auto my-auto"
                   onChange={(e) => {
